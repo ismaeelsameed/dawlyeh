@@ -1,5 +1,5 @@
 """
-WSGI config for Almanarah project.
+WSGI config for dawlyeh project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
