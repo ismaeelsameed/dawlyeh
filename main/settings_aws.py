@@ -125,7 +125,7 @@ STATIC_ROOT = '/home/ubuntu/dawlyeh_env/static/'
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, "main/static"),
+    os.path.join(BASE_DIR, "dawlyeh/static"),
 )
 STATIC_URL = '/static/'
 MEDIA_ROOT = '/home/ubuntu/dawlyeh/main/media/'
