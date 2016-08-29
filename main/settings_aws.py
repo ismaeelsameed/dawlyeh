@@ -45,24 +45,24 @@ INSTALLED_APPS = (
     'crispy_forms',
     'dawlyeh',
 )
-LOGGING = {
-    'version': 1,
-    'disable_existing_loggers': False,
-    'handlers': {
-        'file': {
-            'level': 'DEBUG',
-            'class': 'logging.FileHandler',
-            'filename': '/home/ubuntu/log/log.log',
-        },
-    },
-    'loggers': {
-        'django': {
-            'handlers': ['file'],
-            'level': 'DEBUG',
-            'propagate': True,
-        },
-    },
-}
+# LOGGING = {
+#     'version': 1,
+#     'disable_existing_loggers': False,
+#     'handlers': {
+#         'file': {
+#             'level': 'DEBUG',
+#             'class': 'logging.FileHandler',
+#             'filename': '/home/ubuntu/log/log.log',
+#         },
+#     },
+#     'loggers': {
+#         'django': {
+#             'handlers': ['file'],
+#             'level': 'DEBUG',
+#             'propagate': True,
+#         },
+#     },
+# }
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
