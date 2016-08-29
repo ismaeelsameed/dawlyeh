@@ -1,0 +1,20 @@
+{% extends 'dawlyeh/base.html' %}
+
+{% block content %}
+    {% include 'dawlyeh/header.html' %}
+    {% include 'dawlyeh/banner.html' %}
+    <!-- MAIN CONTENT SECTION -->
+    <div class="main-wrapper">
+        <section class="mainContent clearfix">
+            <div class="container">
+                {% include 'dawlyeh/main_content.html' %}
+            </div>
+        </section>
+    </div>
+    {% include 'dawlyeh/footer.html' %}
+    {% include 'dawlyeh/copy_right.html' %}
+    {% include 'dawlyeh/login_modal.html' %}
+    {% include 'dawlyeh/sign_up_modal.html' %}
+    {% include 'dawlyeh/product_quick_view_modal.html' %}
+{% endblock %}
+

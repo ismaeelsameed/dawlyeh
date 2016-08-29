@@ -1,0 +1,60 @@
+{% load staticfiles %}
+<div class="row featuredCollection">
+    <div class="col-xs-12">
+        <div class="page-header">
+            <h4>Featured Collection</h4>
+        </div>
+    </div>
+    <div class="col-sm-3 col-xs-12">
+        <div class="thumbnail" onclick="location.href='{% url 'product_detail' %}';">
+            <div class="imageWrapper">
+                <img src="{% static 'dawlyeh/img/home/featured-collection/E07502G2.png' %}"
+                     alt="feature-collection-image">
+                <div class="masking"><a href="{% url 'product_grid' %}" class="btn viewBtn">View Prodocts</a>
+                </div>
+            </div>
+            <div class="caption">
+                <h4>Computers</h4>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-3 col-xs-12">
+        <div class="thumbnail" onclick="location.href='{% url 'product_detail' %}';">
+            <div class="imageWrapper">
+                <img src="{% static 'dawlyeh/img/home/featured-collection/E11505G1.png' %}"
+                     alt="feature-collection-image">
+                <div class="masking"><a href="{% url 'product_grid' %}" class="btn viewBtn">View Prodocts</a>
+                </div>
+            </div>
+            <div class="caption">
+                <h4>Printers</h4>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-3 col-xs-12">
+        <div class="thumbnail" onclick="location.href='{% url 'product_detail' %}';">
+            <div class="imageWrapper">
+                <img src="{% static 'dawlyeh/img/home/featured-collection/E10562G1.png' %}"
+                     alt="feature-collection-image">
+                <div class="masking"><a href="{% url 'product_grid' %}" class="btn viewBtn">View Prodocts</a>
+                </div>
+            </div>
+            <div class="caption">
+                <h4>Routers</h4>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-3 col-xs-12">
+        <div class="thumbnail" onclick="location.href='{% url 'product_detail' %}';">
+            <div class="imageWrapper">
+                <img src="{% static 'dawlyeh/img/home/featured-collection/E11586G1.png' %}"
+                     alt="feature-collection-image">
+                <div class="masking"><a href="{% url 'product_grid' %}" class="btn viewBtn">View Prodocts</a>
+                </div>
+            </div>
+            <div class="caption">
+                <h4>Routers</h4>
+            </div>
+        </div>
+    </div>
+</div>

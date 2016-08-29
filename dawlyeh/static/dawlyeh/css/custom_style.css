@@ -1,0 +1,39 @@
+/*RESIZE NAVBAR IN SCROLL DOWN*/
+@media (min-width: 768px) {
+    .navbar-default.navbar-fixed-top .navbar-collapse li a {
+        padding: 35px 15px 20px; /* PADDING FROM THE TOP EDITED FROM 20 TO 40 */
+    }
+}
+
+.navbar-fixed-top .navbar-brand {
+    width: 197px;
+    height: auto; /* EDITED FROM 30 TO auto */
+    -webkit-transition: height 0.3s, width 0.3s;
+    -moz-transition: height 0.3s, width 0.3s;
+    -ms-transition: height 0.3s, width 0.3s;
+    -o-transition: height 0.3s, width 0.3s;
+    transition: height 0.3s, width 0.3s;
+}
+
+@media (min-width: 768px) {
+    .navbar-default .navbar-header .navbar-brand {
+        padding: 0 15px;
+        margin-top: 5px; /* EDITED FROM 27 TO 10 */
+        margin-bottom: 5px; /* ADDED NEW MARGIN */
+    }
+}
+
+/* HIDE BUTTON FROM BANNER IF DEVICE IS SMALL */
+@media only screen and (max-device-width: 900px) {
+    .rs-caption-4 {
+        display: none;
+    }
+}
+
+.remove_margin_right {
+    margin-right: 0px;
+}
+
+.remove_margin_left {
+    margin-left: 0px;
+}

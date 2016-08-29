@@ -1,0 +1,47 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Home{% endblock %}</title>
+    <!-- SITE TITTLE -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- PLUGINS CSS STYLE -->
+    <link href="{% static 'dawlyeh/plugins/jquery-ui/jquery-ui.css' %}" rel="stylesheet">
+    <link href="{% static 'dawlyeh/plugins/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'dawlyeh/plugins/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet">
+    <link href="{% static 'dawlyeh/plugins/selectbox/select_option1.css' %}" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{% static 'dawlyeh/plugins/rs-plugin/css/settings.css' %}"
+          media="screen">
+    <link rel="stylesheet" type="text/css" href="{% static 'dawlyeh/plugins/owl-carousel/owl.carousel.css' %}"
+          media="screen">
+
+    <!-- CUSTOM CSS -->
+    <link href="{% static 'dawlyeh/css/style.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'dawlyeh/css/colors/deepBlue.css' %}" id="option_color">
+    <link href="{% static 'dawlyeh/css/custom_style.css' %}" rel="stylesheet">
+
+    <!-- GOOGLE FONT -->
+    <link href='{% static 'dawlyeh/css/font.css' %}' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+
+
+{% block content %}
+{% endblock %}
+
+<script src="{% static 'dawlyeh/js/jquery.min.js' %}"></script>
+<script src="{% static 'dawlyeh/plugins/jquery-ui/jquery-ui.js' %}"></script>
+<script src="{% static 'dawlyeh/plugins/bootstrap/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'dawlyeh/plugins/rs-plugin/js/jquery.themepunch.tools.min.js' %}"></script>
+<script src="{% static 'dawlyeh/plugins/rs-plugin/js/jquery.themepunch.revolution.min.js' %}"></script>
+<script src="{% static 'dawlyeh/plugins/owl-carousel/owl.carousel.js' %}"></script>
+<script src="{% static 'dawlyeh/plugins/selectbox/jquery.selectbox-0.1.3.min.js' %}"></script>
+<script src="{% static 'dawlyeh/plugins/countdown/jquery.syotimer.js' %}"></script>
+<script src="{% static 'dawlyeh/js/custom.js' %}"></script>
+</body>
+</html>

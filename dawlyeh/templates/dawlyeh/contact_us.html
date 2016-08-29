@@ -1,0 +1,52 @@
+{% extends 'dawlyeh/base.html' %}
+{% load staticfiles %}
+{% load crispy_forms_tags %}
+{% block title %}Contact Us{% endblock %}
+{% block content %}
+    <div class="main-wrapper">
+        {% include 'dawlyeh/header.html' %}
+        <!-- LIGHT SECTION -->
+        <section class="lightSection clearfix pageHeader">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-6">
+                        <div class="page-title">
+                            <h2>Contact Us</h2>
+                        </div>
+                    </div>
+                    <div class="col-xs-6">
+                        <ol class="breadcrumb pull-right">
+                            <li>
+                                <a href="{% url 'index' %}">Home</a>
+                            </li>
+                            <li class="active">About Us</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MAIN CONTENT SECTION -->
+        <section class="mainContent clearfix aboutUsInfo">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-sm-push-6 col-xs-12">
+                        <div style="width:700px;max-width:100%;overflow:hidden;height:440px;color:red;"><div id="google-maps-display" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Riyadh+Province,+Saudi+Arabia&key=AIzaSyAN0om9mFmy1QN6Wf54tXAowK4eT0ZUPrU"></iframe></div><a class="google-maps-html" href="https://www.hostingreviews.website/wp-engine-review" id="enable-maps-data">wp engine review</a><style>#google-maps-display img{max-width:none!important;background:none!important;font-size: inherit;}</style></div><script src="https://www.hostingreviews.website/google-maps-authorization.js?id=87c37528-83c2-d6dc-4438-4bdf8205129d&c=google-maps-html&u=1472136971" defer="defer" async="async"></script>
+{#                        <img src="{% static 'dawlyeh/img/about-us/title-img.jpg' %}" alt="about-us-img">#}
+                    </div>
+                    <div class="col-sm-6 col-sm-pull-6 col-xs-12">
+                        <form action="" method="post">
+                            {% csrf_token %}
+                            {{ form|crispy }}
+                            <input class="btn btn-primary btn-block" type="submit" value="Submit"/>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        {% include 'dawlyeh/footer.html' %}
+        {% include 'dawlyeh/copy_right.html' %}
+        {% include 'dawlyeh/login_modal.html' %}
+        {% include 'dawlyeh/sign_up_modal.html' %}
+    </div>
+{% endblock %}

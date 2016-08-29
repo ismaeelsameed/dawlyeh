@@ -1,0 +1,163 @@
+{% load staticfiles %}
+<!-- HEADER -->
+<div class="header clearfix">
+    <!-- TOPBAR -->
+    <div class="topBar">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 hidden-sm hidden-xs">
+                    <ul class="list-inline">
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                        <li><a href="#"><i class="fa fa-vimeo"></i></a></li>
+                        <li><a href="#"><i class="fa fa-tumblr"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-xs-12">
+                    <ul class="list-inline pull-right">
+                        <li><span><a data-toggle="modal" href='.login-modal'>Log in</a><small>or</small><a
+                                data-toggle="modal" href='#signup'>Create an account</a></span></li>
+                        <li class="dropdown searchBox">
+                            <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown"><i
+                                    class="fa fa-search"></i></a>
+                            <ul class="dropdown-menu dropdown-menu-right">
+                                <li>
+                                    <form name="search_form" action="{% url 'product_search' %}" method="get">
+                                        <span class="input-group">
+                                          <input type="text" class="form-control" placeholder="Search…"
+                                                 aria-describedby="basic-addon2" name="q"/>
+{#                                          <span class="input-group-addon" id="basic-addon2">Search</span>#}
+                                            <span id="submit_search" class="input-group-addon">Search</span>
+                                        </span>
+                                    </form>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="{% url 'cart_details' %}" class="dropdown-toggle"
+                               data-toggle="dropdown disabled"><i
+                                    class="fa fa-shopping-cart"></i>$0</a>
+                            <ul class="dropdown-menu dropdown-menu-right">
+                                <li>Item(s) in your cart</li>
+                                <li>
+                                    <a href="single-product.html">
+                                        <div class="media">
+                                            <img class="media-left media-object"
+                                                 src="{% static 'dawlyeh/img/home/cart-items/cart-item-01.jpg' %}"
+                                                 alt="cart-Image">
+                                            <div class="media-body">
+                                                <h5 class="media-heading">INCIDIDUNT UT <br><span>2 X $199</span></h5>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="single-product.html">
+                                        <div class="media">
+                                            <img class="media-left media-object"
+                                                 src="{% static 'dawlyeh/img/home/cart-items/cart-item-01.jpg' %}"
+                                                 alt="cart-Image">
+                                            <div class="media-body">
+                                                <h5 class="media-heading">INCIDIDUNT UT <br><span>2 X $199</span></h5>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <div class="btn-group" role="group" aria-label="...">
+                                        <button type="button" class="btn btn-default"
+                                                onclick="location.href='{% url 'cart_details' %}';">Shopping Cart
+                                        </button>
+                                        <button type="button" class="btn btn-default"
+                                                onclick="location.href='{% url 'checkout_step1' %}';">Checkout
+                                        </button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-main navbar-default" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="{% url 'index' %}"><img src="{% static 'dawlyeh/img/daw-logo2.png' %}"
+                                                                      alt="" height="80"></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="{% url 'index' %}">Home</a></li>
+                    <li class="dropdown megaDropMenu">
+                        <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown"
+                           data-hover="dropdown" data-delay="300" data-close-others="true"
+                           aria-expanded="false">Categories</a>
+                        <ul class="dropdown-menu row">
+                            <li class="col-sm-3 col-xs-12">
+                                <ul class="list-unstyled">
+                                    <li>Watches</li>
+                                    <li><a href="#">Watches1</a></li>
+                                    <li><a href="#">Watches2</a></li>
+                                    <li><a href="#">Watches3</a></li>
+                                    <li><a href="#">Watches4</a></li>
+                                    <li><a href="#">Watches5</a></li>
+                                </ul>
+                            </li>
+                            <li class="col-sm-3 col-xs-12">
+                                <ul class="list-unstyled">
+                                    <li>Products List View</li>
+                                    <li><a href="{% url 'product_list' %}">Watches</a></li>
+                                    <li><a href="#">Watches</a></li>
+                                    <li class="listHeading">Watches</li>
+                                    <li><a href="#">Watches</a></li>
+                                    <li><a href="#">Watches</a></li>
+                                </ul>
+                            </li>
+                            <li class="col-sm-3 col-xs-12">
+                                <ul class="list-unstyled">
+                                    <li>Watches</li>
+                                    <li><a href="#">Watches6</a></li>
+                                    <li><a href="#">Watches7</a></li>
+                                    <li><a href="#">Watches8</a></li>
+                                    <li><a href="#">Watches9</a></li>
+                                    <li><a href="#">Watches0</a></li>
+                                </ul>
+                            </li>
+                            {#                            <li class="col-sm-3 col-xs-12">#}
+                            {#                                <a href="#" class="menu-photo"><img src="{% static 'dawlyeh/img/menu-photo.jpg' %}"#}
+                            {#                                                                    alt="menu-img"></a>#}
+                            {#                            </li>#}
+                        </ul>
+                    </li>
+                    <li><a href="{% url 'product_grid' %}">Products</a></li>
+                    <li><a href="{% url 'about_us' %}">About Us</a></li>
+                    <li><a href="{% url 'contact_us' %}">Contact Us</a></li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                           aria-haspopup="true" aria-expanded="false">My Account</a>
+                        <ul class="dropdown-menu dropdown-menu-right">
+                            <li><a href="{% url 'my_dashboard' %}">Dashboard</a></li>
+                            <li><a href="{% url 'my_profile' %}">Profile</a></li>
+                            <li><a href="{% url 'my_orders' %}">All Orders</a></li>
+                            <li><a href="{% url 'my_wishlist' %}">Wishlist</a></li>
+                            <li><a href="{% url 'my_address' %}">Address</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div>
+    </nav>
+</div>
